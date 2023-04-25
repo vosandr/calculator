@@ -52,7 +52,7 @@ document.querySelector('.buttons').onclick=(event)=>{
     }
 
     if ( key === '='){
-        if (b==='') b=a;
+        if (secondNumber==='') secondNumber=firstNumber;
         switch (sign){
             case "+":
                 firstNumber=(+firstNumber)+(+secondNumber);
