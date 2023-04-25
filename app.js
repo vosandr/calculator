@@ -1,17 +1,17 @@
+
 const express = require("express");
 const app = express();
 const path = require("path")
 
-const port = 8080
+const port = 8081
 
-app.use(express.static(path.join(__dirname, 'views')));
+app.use("/static", express.static(path.join(__dirname, 'static')));
 
 app.set("view engine", "pug");
-app.set("views"); // установка пути к представлениям. По умолчанию - views
- 
-app.use("/", function(request, response){
-      
-    response.render("index");
+app.set("views");
+
+app.use("/", function(req, res){
+    res.render("index");
 }); 
 
 

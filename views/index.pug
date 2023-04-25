@@ -1,9 +1,35 @@
 doctype html
 html 
     head 
-        title Заголовок файла
-        link(type="Image/x-icon" href="/favicon.png" rel="icon")
-        link(rel="stylesheet" href="/style.css")
+        title Калькулятор
+        link(type="Image/x-icon" href="/static/favicon.png" rel="icon")
+        link(rel="stylesheet" href="/static/style.css")
     body
-        
-        script(src="./script.js")
+        .calc
+            .calc-screen 
+                p 0
+            .buttons 
+                .btn.bg-grey.ac ac  
+                .btn.bg-grey.plus-minus +/- 
+                .btn.bg-grey.percent % 
+                .btn.bg-orange.division /
+
+                .btn.seven 7
+                .btn.eight 8
+                .btn.nine 9
+                .btn.bg-orange.multiply X
+
+                .btn.four 4
+                .btn.five 5               
+                .btn.six 6
+                .btn.bg-orange.minus -
+
+                .btn.one 1
+                .btn.two 2
+                .btn.three 3
+                .btn.bg-orange.plus +
+
+                .btn.zero 0
+                .btn.dot .
+                .btn.bg-orange.equal =
+        script(src="/static/script.js")
