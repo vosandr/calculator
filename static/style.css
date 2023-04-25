@@ -42,7 +42,7 @@
     display:grid;
     grid-template-areas: 
     "ac plus-minus percent division"
-    "seven eight six multi"
+    "seven eight nine multi"
     "four five six minus"
     "one two three plus"
     "zero zero dot equal";

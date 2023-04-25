@@ -1,26 +1,27 @@
 doctype html
-html 
+<html>
     head 
         title Калькулятор
         link(type="Image/x-icon" href="/static/favicon.png" rel="icon")
         link(rel="stylesheet" href="/static/style.css")
-    body
+    <body>
         .calc
             .calc-screen 
                 p 0
+
             .buttons 
-                .btn.bg-grey.ac ac  
-                .btn.bg-grey.plus-minus +/- 
-                .btn.bg-grey.percent % 
+                .btn.bg-grey.ac ac
+                .btn.bg-grey.plus-minus +/-
+                .btn.bg-grey.percent %
                 .btn.bg-orange.division /
 
                 .btn.seven 7
                 .btn.eight 8
                 .btn.nine 9
-                .btn.bg-orange.multiply X
+                .btn.bg-orange.multiply x
 
                 .btn.four 4
-                .btn.five 5               
+                .btn.five 5
                 .btn.six 6
                 .btn.bg-orange.minus -
 
@@ -32,4 +33,7 @@ html
                 .btn.zero 0
                 .btn.dot .
                 .btn.bg-orange.equal =
+
         script(src="/static/script.js")
+    </body>
+</html>
